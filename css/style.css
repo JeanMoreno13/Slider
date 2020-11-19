@@ -1,0 +1,167 @@
+/********************************************************
+*******************    GENERAL         ******************
+********************************************************/
+* {
+    padding: 0;
+    margin: 0;
+}
+  
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; 
+  transition:1s all ease-in-out;
+  background:url('../img/bali-big.jpg')no-repeat center center fixed;
+}
+  
+.content{
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+/********************************************************
+*******************       TEXT         ******************
+********************************************************/
+.text-wrapper {
+  width: 60%;
+  padding:0 50px;
+}
+
+#title {
+  margin-bottom: 20px;
+}
+
+.text h4 {
+  text-transform: uppercase;
+  font-size: 120px;
+  color: white;
+  font-family: 'Spectral SC', serif;
+  -webkit-text-stroke: 2px black;
+}
+
+#description p {
+  -webkit-text-stroke: 2px black;
+  font-family: 'Anton', sans-serif;
+  color:white;
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing:3px;
+}
+
+/********************************************************
+*******************       GLIDE         ******************
+********************************************************/
+.glide {
+  width: 40%;
+}
+
+.slide {
+  height: 450px;
+  width: 250px;
+  margin-right: 40px; 
+}
+
+ .slider-image {
+  height: 300px;
+  width:250px;
+} 
+
+.slider-image img{
+  border-radius:10px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+.glide__slide--active .slider-image {
+  transition:0.5s all ease-in-out;
+  height: 400px; 
+}
+
+.controls {
+  width: 80px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index:1;
+}
+
+.controls i {
+  color: white;
+  border-radius:50%;
+  background-color:black;
+  padding:10px;
+  font-size: 12px;
+  cursor: pointer;
+  touch-action: none;
+}
+.controls i:hover{
+  opacity:0.75;
+}
+
+@media  only screen and (max-width: 1600px){
+  .text-wrapper {
+    width: 50%;
+  }
+  .glide__slides {
+    width: 50%;
+  }
+  .text {
+    padding-left: 100px;
+  }
+  .text h4 {
+    transform: scale(0.8);
+    transform-origin: left;
+  }
+}
+
+@media  only screen and (max-width: 1300px){
+  .text h4 {
+    transform: scale(0.6);
+    transform-origin: left;
+  }
+  .slide {
+    height: 400px;
+    width: 220px;
+  }
+} 
+
+@media  only screen and (max-width: 770px){
+  .text{
+    padding: 10px;
+  }
+  .text h4 {
+    font-size:50px;
+  }
+  .content {
+    flex-direction: column;
+  }
+  .text-wrapper {
+    width: 100%;
+    height:50%;
+    padding:0 10px 20px 10px;
+  }
+  .glide {
+    width: 100%;
+    padding:40px 10px;
+  }
+
+  .slide {
+    height: 220px;
+    width:100px;
+  
+  }
+  .slider-image {
+    height: 220px;
+    width: 100px;
+  }
+  .glide__slide--active .slider-image {
+    height: 100%;
+  } 
+  .controls{
+    width:100%;
+    justify-content: center;
+    margin-top:20px;
+  }
+}  

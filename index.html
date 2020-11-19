@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Spectral+SC:ital,wght@1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/glide.core.min.css">
+        <link rel="stylesheet" href="css/style.css">   
+        <script src="js/script.js" defer></script>
+        <script src="js/glide.min.js"></script>
+        <script src="https://kit.fontawesome.com/fedb8ab448.js"></script>            
+        <title>JS Sliding</title>
+    </head>
+    <body>
+      <div class="content">
+
+        <div class="text-wrapper">
+          <div class="text">
+            <div id="title">
+              <h4>BALI</h4>
+            </div>
+            <div id="description">
+              <p>
+                L'Île des Dieux, plus connue sous le nom de Bali, est une île 
+                indonésienne située entre Java et Lombok. Séparée de ces deux 
+                dernières par le détroit de Bali à l’ouest et le détroit de 
+                Lombok à l’est, sa superficie totale est de 5.637 km2. Bali est 
+                la destination touristique la plus prisée et la plus connue d’Indonésie
+              </p>
+            </div>
+          </div>
+        </div>
+                        
+        <div class="glide">
+          <div class="glide_cover"></div>
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide">
+                <div class="slide one" data-index="1">
+                  <div class="slider-image">
+                    <img src="img/bali-small.jpg" />
+                  </div>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="slide two" data-index="2">
+                  <div class="slider-image">
+                    <img src="img/mexico-small.jpg" />
+                  </div>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="slide three" data-index="3">
+                  <div class="slider-image">
+                    <img src="img/thailand-small.jpg" />
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div data-glide-el="controls" class="controls">                
+              <i data-glide-dir="<" id="prev" class="fa fa-arrow-left"></i>              
+              <i data-glide-dir=">" id="next" class="fa fa-arrow-right"></i>             
+          </div>
+        </div>
+
+      </div>  
+    </body>
+</html>
